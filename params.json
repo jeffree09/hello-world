@@ -1,0 +1,6 @@
+{
+  "name": "Hello-world",
+  "tagline": "LIKE1",
+  "body": "# hello-world\r\nLike1\r\n<form onsubmit=\"return baiduWithHttps(this)\" action=\"http://www.baidu.com/baidu\" target=\"_blank\">\r\n    <input name=\"tn\" type=\"hidden\" value=\"SE_zzsearchcode_shhzc78w\">\r\n    <a href=\"https://www.baidu.com/\" target=\"_blank\">\r\n        <img src=\"https://www.baidu.com/img/baidu_jgylogo3.gif\" alt=\"Baidu\" align=\"bottom\" border=\"0\">\r\n    </a>\r\n    <input type=\"text\"  onfocus=\"checkHttps\" name=\"word\"  size=\"30\">\r\n    <input type=\"submit\"value=\"百度搜索\">\r\n</form>\r\n<script src=\"http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js\"></script>\r\n<script>\r\n    function checkHttps () {\r\n        BaiduHttps.useHttps();    \r\n    };\r\n    function baiduWithHttps (formname) {\r\n        var data = BaiduHttps.useHttps();\r\n        if (data.s === 0) {\r\n            return true;\r\n        }\r\n        else {\r\n            formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;\r\n            return true;\r\n        }\r\n    };\r\n</script>\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
